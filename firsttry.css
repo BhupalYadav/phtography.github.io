@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:sans-serif;
+    position:relative;
+    box-sizing:content-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgb(0,0,0,0.7)),url(images/logorez.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 20px;
+    
+}
+
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.navbar ul li {
+    list-style:none;
+    display:inline;
+    margin: 0px 20px;
+    position:relative;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color: aliceblue;
+    text-transform: uppercase;
+    position: relative;
+}
+.navbar ul::after{
+    content:'';
+    height: 2px;
+    width: 0;
+    background-color: aquamarine;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar ul li a:hover{
+    color: aqua;
+    transition: all 0.4s ease 0s;
+}
+.navbar h1{
+    color:  rgb(254, 254, 254);
+    font-family:serif;
+    margin-left:-40px;
+    position:relative;
+    border:3px dashed chocolate;
+}
+.navbar h1:hover{
+    color:rgb(0, 255, 247);
+    cursor: pointer;
+}
+.navbar h2{
+    display: none;
+}
+.navbar h2:hover.navbar h2{
+    display: block;
+    position: absolute;
+    color: aliceblue;
+}
+
+.submenu{
+    display: none;
+}
+.navbar ul li:hover .submenu{
+    display:flex;
+    position:absolute;
+}
+.navbar ul li:hover .submenu ul{
+    display:flex;
+    margin-bottom: -10px;
+    margin:10px 100px;
+    width: 100%;
+}
+
+.navbar ul li:hover .submenu ul li{
+    justify-content:space-around;
+    width:150px;
+    text-size-adjust: 10px;
+    text-align: left;
+    position:flex;
+    display: block;
+}
+.submenu1{
+    display: none;
+    justify-content:space-between;
+    
+}
+.navbar ul li:hover .submenu1{
+    display:block;
+    position: absolute;
+    margin-left: 510px;
+    margin-top: 1px;
+    justify-items:space-between;
+    background-color: aliceblue;
+}
+.navbar ul li:hover .submenu1 ul li{
+    justify-content:space-around;
+    text-decoration: none;
+    position:absolute;
+    display:block;
+    padding-right: 30px;
+    justify-content: space-evenly;
+
+}
+ 
